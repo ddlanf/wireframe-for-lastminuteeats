@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(211, 211, 211, 0.322);
+}
+
+nav{
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    height: 12vw;
+    max-height: 100px;
+    z-index: 5;
+}
+
+.left-nav, .right-nav{
+    position: absolute;
+    text-align: left;
+    padding-top: 3.5%;
+    font-size: 4vw;
+}
+
+.left-nav{
+    left: 0;
+    padding-left: 4%
+}
+
+.right-nav{
+    right: 0;
+    padding-right: 4%;
+}
+
+main{
+    margin-top: 7vw;
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero{
+    border: 1px dotted black;
+    width: 80%;
+    margin-top: 15%;
+    height: 45vw;
+    font-size: 5vw;
+    padding-top: 18%;
+}
+
+.heading{
+    width: 90%;
+    max-width: 1100px;
+    border: 1px solid black;
+    background-color: lightgray;
+    margin-top: 5vw;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+h1{
+    font-size: 4vw;
+}
+
+.small-header{
+    font-size: 3.5vw;
+}
+
+h3{
+    font-size: 4vw;
+}
+
+h4{
+    font-size: 3.5vw;
+}
+
+h5{
+    font-size: 3vw;
+}
+
+.my-info{
+    width: 70%;
+    margin-top: 5vw;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 3vw;
+}
+
+.sign-up-form{ 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    width: 100%; 
+    z-index: 8;
+    margin-top: 25%; 
+    text-align: center; 
+}
+
+.sign-up-email{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    display: block;
+}
+
+.sign-up{
+    font-size: 4vw;
+    width: 30%;
+}
+
+@media screen and (min-width: 1000px) {
+    .right-nav, .left-nav{
+        padding-top: 30px;
+        font-size: 35px;
+    }
+    .hero{
+        margin-top: 10%;
+    }
+  
+    h1{
+        font-size: 3vw;
+    }
+    
+    .small-header{
+        font-size: 2.5vw;
+    }
+    
+    h3{
+        font-size: 3vw;
+    }
+    
+    h4{
+        font-size: 2.5vw;
+    }
+    
+    h5{
+        font-size: 2vw;
+    }
+}

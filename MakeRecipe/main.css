@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    height: 12vw;
+    max-height: 100px;
+    z-index: 5;
+}
+
+.left-nav, .right-nav{
+    position: absolute;
+    text-align: left;
+    padding-top: 3.5%;
+    font-size: 4vw;
+}
+
+.left-nav{
+    left: 0;
+    padding-left: 4%
+}
+
+.right-nav{
+    right: 0;
+    padding-right: 4%;
+}
+
+main{
+    margin-top: 7vw;
+}
+
+.make-recipe{
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    text-align: center;
+}
+
+h1{
+    font-size: 5vw;
+    margin-top: 2%;
+}
+
+.make-recipe-form{
+    width: 100%;
+}
+
+label{
+    display: block;
+    font-size: 4vw;
+    margin-top: 3vw;
+}
+
+.recipe-image, .recipe-name{
+    width: 60%;
+}
+
+.ingredients-and-steps{
+    width: 100%;
+    font-size: 3vw;
+}
+
+.ingredients-and-steps > *{
+    font-size: 3vw;
+}
+
+.button-and-text{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.plus{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 0;
+}
+
+.minus{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    right: 0;
+}
+
+input{
+    width: 80%;
+    font-size: 5vw;
+}
+
+span{
+    font-size: 5vw;
+}
+
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 25%;
+}
+
+.instructions-input, .ingredients-input{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .right-nav, .left-nav{
+        padding-top: 30px;
+        font-size: 35px;
+    }
+  
+    .ingredients-and-steps{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    label{
+        display: block;
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    input{
+        font-size: 3vw;
+    }
+
+    .submit{
+        height: 3vw;
+    }
+}
